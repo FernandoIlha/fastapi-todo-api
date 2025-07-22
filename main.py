@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS tarefas (
 class Tarefa(BaseModel):
     titulo: str
     descricao: str
-    concluida: bool
+    concluida: bool = False
 
 
 ##fucoes_app
