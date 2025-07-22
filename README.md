@@ -2,6 +2,23 @@
 
 Este projeto é uma API simples para gerenciamento de tarefas (CRUD) desenvolvida com [FastAPI](https://fastapi.tiangolo.com/) e [SQLite](https://www.sqlite.org/index.html).
 
+## Features Implementadas
+- [x] CRUD completo de tarefas  
+- [x] Banco de dados SQLite (pronto para migração para PostgreSQL)  
+- [x] Proteção contra SQL Injection  
+- [x] Documentação automática via Swagger  
+
+## Tecnologias Usadas  
+- Python 3.11  
+- FastAPI  
+- SQLite  
+- Render (deploy)  
+
+## Próximos Passos  
+- [ ] Autenticação JWT  
+- [ ] Dockerização  
+- [ ] Testes automatizados com pytest
+
 ## Funcionalidades
 
 - Criar tarefas
