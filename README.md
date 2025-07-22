@@ -1,2 +1,60 @@
-# fastapi-todo-api
-API de Tarefas (To-Do) com FastAPI + SQLite | CRUD Completo + Deploy  Uma API back-end eficiente para gerenciamento de tarefas, desenvolvida com: - Python 3.11 + FastAPI - SQLite 
+# API de Tarefas - FastAPI & SQLite
+
+Este projeto é uma API simples para gerenciamento de tarefas (CRUD) desenvolvida com [FastAPI](https://fastapi.tiangolo.com/) e [SQLite](https://www.sqlite.org/index.html).
+
+## Funcionalidades
+
+- Criar tarefas
+- Listar tarefas
+- Atualizar tarefas
+- Deletar tarefas
+
+## Como executar
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seuusuario/seurepositorio.git](https://github.com/FernandoIlha/fastapi-todo-api
+   cd seurepositorio
+   ```
+
+2. **Crie e ative um ambiente virtual (opcional):**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+
+3. **Instale as dependências:**
+   ```bash
+   pip install fastapi uvicorn pydantic
+   ```
+
+4. **Execute o servidor:**
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+5. **Acesse a documentação interativa:**
+   - [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+## Endpoints
+
+- `POST /tarefas` - Cria uma nova tarefa
+- `GET /tarefas` - Lista todas as tarefas
+- `PUT /tarefas/{tarefa_id}` - Atualiza uma tarefa existente
+- `DELETE /tarefas/{tarefa_id}` - Deleta uma tarefa
+
+## Estrutura da Tarefa
+
+```json
+{
+  "titulo": "string",
+  "descricao": "string",
+  "concluida": true
+}
+```
+
+## Autor
+
+- Fernando Rodrigues Ilha https://www.linkedin.com/in/fernando-rodrigues-ilha-0669b2261/
+---
+
