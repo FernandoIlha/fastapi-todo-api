@@ -60,6 +60,12 @@ Este projeto é uma API simples para gerenciamento de tarefas (CRUD) desenvolvid
 - `PUT /tarefas/{tarefa_id}` - Atualiza uma tarefa existente
 - `DELETE /tarefas/{tarefa_id}` - Deleta uma tarefa
 
+## Como Testar via Curl
+
+```bash
+# Criar tarefa
+curl -X POST "http://localhost:8000/tarefas" -H "Content-Type: application/json" -d '{"titulo":"Estudar FastAPI","descricao":"Praticar CRUD"}' 
+```
 ## Estrutura da Tarefa
 
 ```json
