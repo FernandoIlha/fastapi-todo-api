@@ -56,3 +56,6 @@ def deletar_tarefa(tarefa_id: int):
    conn.commit()
    return {"message": "Tarefa deletada com sucesso!"}
 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0" , port=10000)
